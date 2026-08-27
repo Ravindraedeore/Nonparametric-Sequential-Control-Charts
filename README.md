@@ -17,7 +17,7 @@ This repository contains R code for implementing and analyzing nonparametric seq
 
 ## Description ℹ️
 
-The `Nonparametric-Sequential-Control-Charts` project focuses on the development and evaluation of sequential control charts that do not rely on specific distributional assumptions about the data. This makes them robust and applicable in a wider range of scenarios compared to traditional parametric methods. The repository appears to house research code for analyzing the performance (e.g., Average Sample Number (ASN), Average Number of Steady State (ANSS)) of various sequential control chart types, including SPRT (Sequential Probability Ratio Test) sign charts, EWMA (Exponentially Weighted Moving Average) sign charts, CUSUM (Cumulative Sum) sign charts, and SSRT (Sequential Sukhatme) charts.
+The `Nonparametric-Sequential-Control-Charts` project focuses on the development and evaluation of sequential control charts that do not rely on specific distributional assumptions about the data. This makes them robust and applicable in a wider range of scenarios compared to traditional parametric methods. The repository appears to house research code for analyzing the performance (e.g., Average Sample Number (ASN), Average Number of Steady State (ANSS)) of various sequential control chart types, including SPRT (Sequential Probability Ratio Test) sign charts, EWMA (Exponentially Weighted Moving Average) sign charts, CUSUM (Cumulative Sum) sign charts, SSRT chart, and Sequential Sukhatme charts.
 
 ## Features ✨
 
@@ -54,8 +54,8 @@ Rscript path/to/your/script.R
 
 The scripts in this repository are designed for analyzing the performance of different nonparametric sequential control charts. They can be used to:
 
--   **Evaluate Chart Performance**: Understand how effective different charts are in detecting process shifts by examining metrics like Average Sample Number (ASN) and Average Number of Steady State (ANSS).
--   **Compare Chart Types**: Compare the efficiency and power of SPRT, EWMA, CUSUM, and SSRT charts under various scenarios.
+-   **Evaluate Chart Performance**: Understand how effective different charts are in detecting process shifts by examining metrics like ASN and ANSS.
+-   **Compare Performance**: Compare the efficiency and power of TSST, Miller's SSRT, and new proposed SSRT; also SPRT, EWMA, CUSUM, SSRT, and sequential Sukhatme charts under various scenarios.
 -   **Determine Optimal Parameters**: Analyze regression equations to find optimal boundaries and parameters for control charts.
 -   **Conduct Simulations**: Perform simulations to generate data and test the behavior of control charts.
 
@@ -70,7 +70,7 @@ Nonparametric sequential control charts are valuable in various industries where
 
 ### Example of Usage (Conceptual) 📈
 
-While specific usage commands depend on the R environment, the general pattern involves running individual R scripts to perform specific analyses. For example, to analyze the Average Sample Number (ASN) for an EWMA sign chart using Markov Chains, you would execute:
+While specific usage commands depend on the R environment, the general pattern involves running individual R scripts to perform specific analyses. For example, to analyze the ASN for an EWMA sign chart using Markov Chains, you would execute:
 
 ```R
 # Assuming you are in the correct directory or have set the working path
@@ -89,7 +89,7 @@ Similarly, for other analyses, you would run the corresponding `.R` files:
 The repository is organized into directories representing different chapters or types of analyses:
 
 -   `Ch 2_ Two Sided SPRT sign Charts/`: Contains scripts related to two-sided SPRT sign charts, analyzing metrics like ASN and ANSS for EWMA, Shewhart, and SPRT variations.
--   `Ch 3_New SSRT Test/`: Focuses on new SSRT (Signaling Sequential Run Test) methods, including simulation data, size and power analysis, and regression equations.
+-   `Ch 3_New SSRT Test/`: Focuses on new SSRT (Sequential Signed-Rank Test) methods, including simulation data, size and power analysis, and regression equations.
 -   `Ch 4_SSRT Chart/`: Deals with SSRT charts, including regression equations, steady-state performance metrics for Shewhart, CUSUM, and EWMA charts, and overall SSRT chart performance.
 -   `Ch 5_Sequential Sukhatme Chart/`: Explores the Sequential Sukhatme Chart, including simulation data, regression equations, and steady-state performance comparisons with Shewhart, CUSUM, and EWMA charts.
 
